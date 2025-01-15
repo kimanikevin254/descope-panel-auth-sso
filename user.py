@@ -39,11 +39,6 @@ variable_widget = pn.widgets.Select(name="Variable", value="Temperature", option
 window_widget = pn.widgets.IntSlider(name="Window", value=30, start=1, end=60)
 sigma_widget = pn.widgets.IntSlider(name="Sigma", value=10, start=0, end=20)
 
-logout_widget = pn.widgets.Button(name="Logout", button_type="danger", width=100, align="end")
-
-# Configure logout functionality
-logout_widget.js_on_click(code="""window.location.href = '/logout'""")
-
 # Bind widgets to plotting function
 bound_plot = pn.bind(
     get_plot, variable=variable_widget, window=window_widget, sigma=sigma_widget
