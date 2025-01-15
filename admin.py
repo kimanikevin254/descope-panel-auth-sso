@@ -14,7 +14,7 @@ permissions = tenant_data.get('permissions', [])
 
 # Admin dashboard content
 admin_content = f"""
-### You're an admin. You have access to more functions and data.
+# You're an admin. You have access to more data and functionality.
 
 #### Your Roles:
 <ul>
