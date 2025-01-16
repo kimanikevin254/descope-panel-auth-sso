@@ -47,11 +47,10 @@ bound_plot = pn.bind(
 # Create the layout
 widgets = pn.Column(variable_widget, window_widget, sigma_widget, sizing_mode="fixed", width=300)
 
-# Configure the template with the logout button in the header
+# Configure the template
 template = pn.template.MaterialTemplate(
     site="Panel",
     title="User Dashboard",
-    header=[pn.Row(pn.layout.Spacer(), logout_widget)],
     sidebar=[variable_widget, window_widget, sigma_widget],
     main=[bound_plot]
 )
