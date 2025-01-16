@@ -35,9 +35,6 @@ logout_widget.js_on_click(code="""window.location.href = '/logout'""")
 
 # Authorization callback for the admin dashboard
 def authorize_admin(user_info):
-    # Extract user roles from the user_info dict
-    roles = user_info.get('tenants').get('T2rTAkErbcS044AUsv7i2lM28R2l', {}).get('roles')
-
     if "Tenant Admin" in roles:
         return True
     return "/user"
