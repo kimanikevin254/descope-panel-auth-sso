@@ -12,7 +12,7 @@ To run this code on your local machine:
 2. Clone the repo:
   
   ```bash
-  git clone --single-branch -b starter-template https://github.com/kimanikevin254/descope-panel-auth-sso.git
+  git clone https://github.com/kimanikevin254/descope-panel-auth-sso.git
   ```
 3. Create and activate a virtual environment:
 
